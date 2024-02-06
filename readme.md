@@ -14,3 +14,9 @@ SELECT * FROM `students` WHERE `date_of_birth` BETWEEN '1900-1-1' AND '1994-1-1'
 laurea (286);
 
 SELECT * FROM `courses` WHERE `period` = 'I semestre' AND `year` = '1';
+
+5. Selezionare tutti gli appelli d'esame che avvengono nel pomeriggio (dopo le 14) del
+20/06/2020 (21);
+
+SELECT * FROM `exams` WHERE `hour` > '13:59:59' AND `date` = '2020-06-20';
+
