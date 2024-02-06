@@ -4,7 +4,7 @@ SELECT * FROM `students` WHERE YEAR (`date_of_birth`) = 1990;
 
 2. Selezionare tutti i corsi che valgono più di 10 crediti (479);
 
-SELECT * FROM `courses` WHERE `cfu` BETWEEN 11 AND 99;
+SELECT * FROM `courses` WHERE `cfu` < 9;
 
 3. Selezionare tutti gli studenti che hanno più di 30 anni;
 
@@ -26,8 +26,8 @@ SELECT * FROM `degrees` WHERE `name` LIKE 'Corso di Laurea Magistrale%';
 
 7. Da quanti dipartimenti è composta l'università? (12);
 
-SELECT * FROM `departments`;
+SELECT COUNT(*) FROM `departments`;
 
 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50);
 
-SELECT * FROM `teachers` WHERE `phone` IS NOT NULL;
+SELECT COUNT(*) FROM `teachers` WHERE `phone` IS NOT NULL;
