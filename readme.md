@@ -20,3 +20,6 @@ SELECT * FROM `courses` WHERE `period` = 'I semestre' AND `year` = '1';
 
 SELECT * FROM `exams` WHERE `hour` > '13:59:59' AND `date` = '2020-06-20';
 
+6. Selezionare tutti i corsi di laurea magistrale (38);
+
+SELECT * FROM `degrees` WHERE `name` LIKE 'Corso di Laurea Magistrale%';
